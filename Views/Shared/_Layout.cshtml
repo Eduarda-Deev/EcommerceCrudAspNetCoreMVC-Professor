@@ -19,7 +19,7 @@
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="/Home/Index">
-                    <span class="brand">🤖 RoboForge</span>
+                    <span class="brand">🌀 Hace al Monje</span>
                 </a>
 
                 <div class="collapse navbar-collapse">
@@ -28,46 +28,46 @@
 
                         @if (Context.Session.GetString("UsuarioNome") != null)
                         {
-                            <li class="nav-item">
-                                <span class="nav-link welcome-user">
-                                    Bem-vindo, @Context.Session.GetString("UsuarioNome")!
-                                </span>
-                            </li>
+                        <li class="nav-item">
+                            <span class="nav-link welcome-user">
+                                Bem-vindo, @Context.Session.GetString("UsuarioNome")!
+                            </span>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link nav-robo" href="/Produto/Index">Catálogo</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-robo" href="/Produto/Index">Catálogo</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link nav-robo" href="/Carrinho/Index">Carrinho</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-robo" href="/Carrinho/Index">Carrinho</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link nav-robo" href="/Usuario/Perfil">Meu Perfil</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-robo" href="/Usuario/Perfil">Meu Perfil</a>
+                        </li>
 
-                            @if (Context.Session.GetString("UsuarioTipo") == "Admin")
+                        @if (Context.Session.GetString("UsuarioTipo") == "Admin")
                             {
-                                <li class="nav-item">
-                                    <a class="nav-link admin-link" href="/Admin/Dashboard">Painel Admin</a>
-                                </li>
+                        <li class="nav-item">
+                            <a class="nav-link admin-link" href="/Admin/Dashboard">Painel Admin</a>
+                        </li>
                             }
 
-                            <li class="nav-item">
-                                <form asp-controller="Usuario" asp-action="Logout" method="post" class="d-inline">
-                                    <button type="submit" class="btn btn-link nav-link logout-btn">Sair</button>
-                                </form>
-                            </li>
+                        <li class="nav-item">
+                            <form asp-controller="Usuario" asp-action="Logout" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-link nav-link logout-btn">Sair</button>
+                            </form>
+                        </li>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="btn-nav" href="/Usuario/Login">Login</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="btn-nav" href="/Usuario/Login">Login</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="btn-nav-primary" href="/Usuario/Cadastrar">Cadastrar</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="btn-nav-primary" href="/Usuario/Cadastrar">Cadastrar</a>
+                        </li>
                         }
 
                     </ul>
@@ -87,10 +87,10 @@
 
         <div class="container text-center">
 
-            <h3 class="footer-brand">🤖 RoboForge</h3>
+            <h3 class="footer-brand">🌀 Hace al Monje</h3>
 
             <p class="footer-text">
-                Construindo o futuro da robótica e da automação inteligente.
+                Construindo o futuro da arte
             </p>
 
             <div class="footer-links">
@@ -110,7 +110,7 @@
             </div>
 
             <p class="footer-copy">
-                © 2026 RoboForge - Todos os direitos reservados
+                © 2026 Hace al Monje - Todos os direitos reservados
             </p>
 
         </div>
